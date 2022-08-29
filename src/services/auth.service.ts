@@ -21,3 +21,9 @@ export const login = (username: string, password: string) => {
         }
     })
 }
+
+// Logout method: Deletes JWT token from local storage
+export const logout = () => {
+    localStorage.removeItem(("user"))
+}
+
