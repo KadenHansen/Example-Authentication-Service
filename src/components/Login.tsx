@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import * as Yup from 'yup'
 
 const Login: React.FC = () => {
     const initialValues: {
@@ -8,6 +9,10 @@ const Login: React.FC = () => {
         username: '',
         password: ''
     }
+    const validationSchema = Yup.object().shape({
+        username: Yup.string().required('This field is required!'),
+        password: Yup.string().required('This field is required!')
+    })
     return (
         <div>
 
