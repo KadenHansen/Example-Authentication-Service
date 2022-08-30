@@ -6,3 +6,5 @@ const Profile: React.FC = () => {
         <div className="Profile"></div>
     )
 }
+
+export default Profile
